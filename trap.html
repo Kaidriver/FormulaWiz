@@ -55,7 +55,7 @@
     <div class="content">
 
         <h2>Trapezoid Formulas</h2>
-
+        <div class= "tBox">
         <img src="trap.png" width="250px">
         <p>Area: (a+b)/2 </p>
         <p>Perimeter: a+b+c+d </p>
@@ -68,6 +68,22 @@
         <button onclick="trapCalc()">Calculate</button>
         <p id="traparea"></p>
         <p id="trapper"></p>
+        </div>
+        <div class = "tBox2">
+            <h3>Practice</h3>
+
+            <p id="trapvarA"></p>
+            <p id="trapvarB"></p>
+            <p id="trapvarC"></p>
+            <p id="trapvarH"></p>
+            <script>
+                randTrap();
+            </script>
+            <form id="trapAnswer">a value: <input id="tAnswer2"> </form>
+            <button onclick="trapAnswer()">Calculate</button>
+            <p id="trapCheck"></p>
+            <button onclick="randTrap()">Generate Another</button>
+        </div>
 
     </div>
 

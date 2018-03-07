@@ -103,3 +103,27 @@ function triangleCalc() {
     document.getElementById("tri-area").innerHTML = "Area: " + (a*b)/2;
     document.getElementById("tri-per").innerHTML = "Perimeter: " + (a2+d+c2);
 }
+var answer;
+function randTrap () {
+
+    var a = Math.floor((Math.random() * 20) + 1);
+    var b = Math.floor((Math.random() * 20) + 1);
+    var c = Math.floor((Math.random() * 20) + 1);
+    var h = Math.floor((Math.random() * 20) + 1);
+    document.getElementById("trapvarA").innerHTML = "Side a value: " + a;
+    document.getElementById("trapvarB").innerHTML = "Side b value: " + b;
+    document.getElementById("trapvarC").innerHTML = "Side c value: " + c;
+    document.getElementById("trapvarH").innerHTML = "Side h value: " + h;
+    answer = ((a+b)/2)*h;
+
+}
+function trapAnswer () {
+
+    var user = parseFloat(document.getElementById("tAnswer2").value);
+    if (answer == user) {
+        document.getElementById("trapCheck").innerHTML = "Correct!";
+
+    } else {
+        document.getElementById("trapCheck").innerHTML = "Incorrect!";
+    }
+}

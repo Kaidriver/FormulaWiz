@@ -124,3 +124,28 @@ nav li{
 .list li {
     margin-bottom: 50px;
 }
+.tBox {
+    float: left;
+    box-shadow: 8px 8px 16px 1px lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+    width: 375px;
+    height: 500px;
+    background-color: white;
+    margin-right: 50px;
+
+    text-align: center;
+}
+
+.tBox2 {
+    float: right;
+    box-shadow: 8px 8px 16px 1px lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+    width: 375px;
+    height: 500px;
+    background-color: white;
+    margin-right: 50px;
+
+    text-align: center;
+}
