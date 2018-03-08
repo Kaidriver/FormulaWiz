@@ -127,3 +127,22 @@ function trapAnswer () {
         document.getElementById("trapCheck").innerHTML = "Incorrect!";
     }
 }
+
+function randRect () {
+  var l = Math.floor((Math.random() * 20) + 1);
+  var w = Math.floor((Math.random() * 20) + 1);
+  document.getElementById("rectvarA").innerHTML = "Length value: " + l;
+  document.getElementById("rectvarB").innerHTML = "Width value: " + w;
+
+  answer = l*w;
+}
+
+function rectAnswer () {
+  var user = parseFloat(document.getElementById("rectAnswer2").value);
+  if (answer == user) {
+      document.getElementById("rectCheck").innerHTML = "Correct!";
+
+  } else {
+      document.getElementById("rectCheck").innerHTML = "Incorrect!";
+  }
+}

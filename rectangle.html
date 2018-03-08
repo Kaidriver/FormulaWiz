@@ -55,7 +55,7 @@
     <div class="content">
 
         <h2>Rectangle Formulas</h2>
-
+        <div class = "tBox">
         <img src="rec.JPG" width="350px">
         <form id="recx1val">w value: <input id="wval"> </form>
         <form id="rec21val">l value: <input id="lval"> </form>
@@ -64,7 +64,21 @@
         <button onclick="rectangleCalc()">Calculate</button>
         <p id="rec-area"></p>
         <p id="rec-per"></p>
+      </div>
+        <div class = "tBox2">
+            <h3>Practice</h3>
 
+            <p id="rectvarA"></p>
+            <p id="rectvarB"></p>
+
+            <script>
+                randRect();
+            </script>
+            <form id="rectAnswer">Area: <input id="rectAnswer2"> </form>
+            <button onclick="rectAnswer()">Calculate</button>
+            <p id="rectCheck"></p>
+            <button onclick="randRect()">Generate Another</button>
+        </div>
 
 
 
