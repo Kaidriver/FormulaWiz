@@ -55,19 +55,35 @@
     <div class="content">
 
         <h2>Parellelogram Formulas</h2>
+        <div class="tBox">
+            <img src="par.png" width="250px">
+            <p>Area: 2a + 2b </p>
+            <p>Perimeter: b*h </p>
+            <form id="p1aval">a value: <input id="paval"> </form>
+            <form id="p2bval">b value: <input id="pbval"> </form>
+            <form id="p3hval">h value: <input id="phval"> </form>
+            <br>
+            <button onclick="parCalc()">Calculate</button>
+            <p id="pararea"></p>
+            <p id="parper"></p>
+        </div>
+        <div class="tBox">
+            <h3>Practice</h3>
 
-        <img src="par.png" width="250px">
-        <p>Area: 2a + 2b </p>
-        <p>Perimeter: b*h </p>
-        <form id="p1aval">a value: <input id="paval"> </form>
-        <form id="p2bval">b value: <input id="pbval"> </form>
-
-        <form id="p3hval">h value: <input id="phval"> </form>
-        <br>
-        <button onclick="parCalc()">Calculate</button>
-        <p id="pararea"></p>
-        <p id="parper"></p>
-
+            <p id="parvarA"></p>
+            <p id="parvarB"></p>
+            <p id="parvarC"></p>
+            <p id="parvarH"></p>
+            <script>
+                randPar();
+            </script>
+            <form id="parAnswer">Area: <input id="pAnswer1"> </form>
+            <form id="parAnswer2">Parameter: <input id="pAnswer2"> </form>
+            <button onclick="parAnswer()">Calculate</button>
+            <p id="parCheck1"></p>
+            <p id="parCheck2"></p>
+            <button onclick="randPar()">Generate Another</button>
+        </div>
     </div>
 
 </div>

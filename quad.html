@@ -55,6 +55,7 @@
             <div class="content">
 
                 <h2>Quadratic Formula</h2>
+                <div class="tBox">
                 
                 <img src="quad.png" width="250px">
                 <form id="quad-aval">a value: <input id="aval"> </form>
@@ -67,7 +68,25 @@
                 <p id="add-sum"></p>
 
                 <p id="add2-sum"></p>
-               
+                </div>
+
+                <div class="tBox2">
+                    <h3>Practice</h3>
+                    <h3>(Please round to the nearest hundredth)</h3>
+                    <p id="quadvarA"></p>
+                    <p id="quadvarB"></p>
+                    <p id="quadvarC"></p>
+
+                    <script>
+                        randQuad();
+                    </script>
+                    <form id="quadAnswer">First x value: <input id="qAnswer1"> </form>
+                    <form id="quadAnswer2">Second x value (if applicable): <input id="qAnswer2"> </form>
+                    <button onclick="quadAnswer()">Calculate</button>
+                    <p id="quadCheck1"></p>
+                    <p id="quadCheck2"></p>
+                    <button onclick="randQuad()">Generate Another</button>
+                </div>
                 
                 
             </div>

@@ -2,8 +2,8 @@ function quadCalc() {
     var a = parseFloat(document.getElementById("aval").value);
     var b = parseFloat(document.getElementById("bval").value);
     var c = parseFloat(document.getElementById("cval").value);
-    document.getElementById("add-sum").innerHTML = "x: " + (((b*-1)+(Math.sqrt(b*b-(4*a*c))))/(2*a))*-1;
-    document.getElementById("add2-sum").innerHTML = "x: " + (((b*-1)-(Math.sqrt(b*b-(4*a*c))))/(2*a))*-1;
+    document.getElementById("add-sum").innerHTML = "x: " + (((b*-1)+(Math.sqrt(b*b-(4*a*c))))/(2*a));
+    document.getElementById("add2-sum").innerHTML = "x: " + (((b*-1)-(Math.sqrt(b*b-(4*a*c))))/(2*a));
 }
 function circleCalc() {
     var r = parseFloat(document.getElementById("rval").value);
@@ -103,7 +103,8 @@ function triangleCalc() {
     document.getElementById("tri-area").innerHTML = "Area: " + (a*b)/2;
     document.getElementById("tri-per").innerHTML = "Perimeter: " + (a2+d+c2);
 }
-var answer;
+var answer1;
+var answer2;
 function randTrap () {
 
     var a = Math.floor((Math.random() * 20) + 1);
@@ -114,17 +115,23 @@ function randTrap () {
     document.getElementById("trapvarB").innerHTML = "Side b value: " + b;
     document.getElementById("trapvarC").innerHTML = "Side c value: " + c;
     document.getElementById("trapvarH").innerHTML = "Side h value: " + h;
-    answer = ((a+b)/2)*h;
-
+    answer1 = ((a+b)/2)*h;
+    answer2 = (a+b+c+c);
 }
 function trapAnswer () {
 
-    var user = parseFloat(document.getElementById("tAnswer2").value);
-    if (answer == user) {
-        document.getElementById("trapCheck").innerHTML = "Correct!";
+    var user = parseFloat(document.getElementById("tAnswer1").value);
+    var user2 = parseFloat(document.getElementById("tAnswer2").value);
+    if (answer1 == user) {
+        document.getElementById("trapCheck1").innerHTML = "Area: Correct!";
+    } else {
+        document.getElementById("trapCheck1").innerHTML = "Area: Incorrect!";
+    }
+    if (answer2 == user2) {
+        document.getElementById("trapCheck2").innerHTML = "Perimeter: Correct!";
 
     } else {
-        document.getElementById("trapCheck").innerHTML = "Incorrect!";
+        document.getElementById("trapCheck2").innerHTML = "Perimeter: Incorrect!";
     }
 }
 
@@ -134,15 +141,98 @@ function randRect () {
   document.getElementById("rectvarA").innerHTML = "Length value: " + l;
   document.getElementById("rectvarB").innerHTML = "Width value: " + w;
 
-  answer = l*w;
+  answer1 = l*w;
 }
 
 function rectAnswer () {
   var user = parseFloat(document.getElementById("rectAnswer2").value);
-  if (answer == user) {
+  if (answer1 == user) {
       document.getElementById("rectCheck").innerHTML = "Correct!";
 
   } else {
       document.getElementById("rectCheck").innerHTML = "Incorrect!";
   }
 }
+function randQuad () {
+    var a = Math.floor((Math.random() * 2) + 1);
+    var b = Math.floor((Math.random() * 10) + 1);
+    var c = Math.floor((Math.random() * 10) + 1);
+    document.getElementById("quadvarA").innerHTML = "A value: " + a;
+    document.getElementById("quadvarB").innerHTML = "B value: " + b;
+    document.getElementById("quadvarC").innerHTML = "C value: " + c;
+    answer1 = (((b*-1)+(Math.sqrt(b*b-(4*a*c))))/(2*a)).toFixed(2);
+    answer2 = (((b*-1)-(Math.sqrt(b*b-(4*a*c))))/(2*a)).toFixed(2);
+}
+
+function quadAnswer () {
+    var user = parseFloat(document.getElementById("qAnswer1").value);
+    var user2 = parseFloat(document.getElementById("qAnswer2").value);
+    if (answer1 == user) {
+        document.getElementById("quadCheck1").innerHTML = "Correct!";
+
+    } else {
+        document.getElementById("quadCheck1").innerHTML = "Incorrect!";
+    }
+    if (answer2 == user2) {
+        document.getElementById("quadCheck2").innerHTML = "Correct!";
+
+    } else {
+        document.getElementById("quadCheck2").innerHTML = "Incorrect!";
+    }
+}
+function randPar () {
+    var a = Math.floor((Math.random() * 20) + 1);
+    var b = Math.floor((Math.random() * 20) + 1);
+    var h = Math.floor((Math.random() * 20) + 1);
+    document.getElementById("parvarA").innerHTML = "A value: " + a;
+    document.getElementById("parvarB").innerHTML = "B value: " + b;
+    document.getElementById("parvarH").innerHTML = "H value: " + h;
+    answer1 = ((2*a) + (2*b));
+    answer2 = (b*h);
+}
+
+function parAnswer () {
+    var user = parseFloat(document.getElementById("pAnswer1").value);
+    var user2 = parseFloat(document.getElementById("pAnswer2").value);
+    if (answer1 == user) {
+        document.getElementById("parCheck1").innerHTML = "Area: Correct!";
+
+    } else {
+        document.getElementById("parCheck1").innerHTML = "Area: Incorrect!";
+    }
+    if (answer2 == user2) {
+        document.getElementById("parCheck2").innerHTML = "Parameter: Correct!";
+
+    } else {
+        document.getElementById("parCheck2").innerHTML = "Parameter: Incorrect!";
+    }
+}
+function randCylinder () {
+    var r = Math.floor((Math.random() * 20) + 1);
+    var h = Math.floor((Math.random() * 20) + 1);
+
+    document.getElementById("cyvarR").innerHTML = "R value: " + r;
+    document.getElementById("cyvarH").innerHTML = "H value: " + h;
+
+    answer1 = (Math.PI * (r * r) * h).toFixed(2);
+    answer2 = (2 * Math.PI * r * (h+r)).toFixed(2);
+}
+
+function cylinderAnswer () {
+    var user = parseFloat(document.getElementById("cAnswer1").value);
+    var user2 = parseFloat(document.getElementById("cAnswer2").value);
+    if (answer1 == user) {
+        document.getElementById("cyCheck1").innerHTML = "Volume: Correct!";
+
+    } else {
+        document.getElementById("cyCheck1").innerHTML = "Volume: Incorrect!";
+    }
+    if (answer2 == user2) {
+        document.getElementById("cyCheck2").innerHTML = "Surface Area: Correct!";
+
+    } else {
+        document.getElementById("cyCheck2").innerHTML = "Surface Area: Incorrect!";
+    }
+}
+
+

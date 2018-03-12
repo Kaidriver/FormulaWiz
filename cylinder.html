@@ -54,18 +54,35 @@
 <div class="container">
     <div class="content">
 
-        <h2>Cone Formulas</h2>
+        <h2>Cylinder Formulas</h2>
+        <div class="tBox">
+            <img src="cylinder.gif" width="250px">
+            <p> V = πr^2 * h </p>
+            <p>SA = 2πrh+2πr^2</p>
+            <form id="r1val">r value: <input id="rval"> </form>
+            <form id="h1val">h value: <input id="hval"> </form>
+            <br>
+            <button onclick="cylinderCalc()">Calculate</button>
+            <p id="cylvol"></p>
+            <p id="cylSA"></p>
+        </div>
+        <div class="tBox2">
+            <h3>Practice</h3>
+            <h3>(Please round to the nearest hundredth)</h3>
 
-        <img src="cylinder.gif" width="250px">
-        <p> V = πr^2 * h </p>
-        <p>SA = 2πrh+2πr^2</p>
-        <form id="r1val">r value: <input id="rval"> </form>
-        <form id="h1val">h value: <input id="hval"> </form>
-        <br>
-        <button onclick="cylinderCalc()">Calculate</button>
-        <p id="cylvol"></p>
-        <p id="cylSA"></p>
+            <p id="cyvarR"></p>
+            <p id="cyvarH"></p>
 
+            <script>
+                randCylinder();
+            </script>
+            <form id="cyAnswer">Area: <input id="cAnswer1"> </form>
+            <form id="cyAnswer2">Parameter: <input id="cAnswer2"> </form>
+            <button onclick="cylinderAnswer()">Calculate</button>
+            <p id="cyCheck1"></p>
+            <p id="cyCheck2"></p>
+            <button onclick="randCylinder()">Generate Another</button>
+        </div>
     </div>
 
 </div>
