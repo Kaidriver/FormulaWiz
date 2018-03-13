@@ -54,18 +54,35 @@
     <div class="content">
 
         <h2> Square Pyramid Formulas</h2>
+        <div class="tBox">
+            <img src="pyramid.gif" width="150px">
+            <p> B = area of base </p>
+            <p> l = slant height</p>
+            <form id="b1val">b  (base side) value: <input id="bval"> </form>
+            <form id="h1val">h value: <input id="hval"> </form>
+            <form id="l1val">l value: <input id="lval"> </form>
+            <br>
+            <button onclick="pyramidCalc()">Calculate</button>
+            <p id="pyravol"></p>
+            <p id="pyraSA"></p>
+        </div>
+        <div class="tBox">
+            <h3>Practice</h3>
+            <h3>(Please round to the nearest hundredth)</h3>
+            <p id="pyrab"></p>
+            <p id="pyrah"></p>
+            <p id="pyral"></p>
 
-        <img src="pyramid.gif" width="250px">
-        <p> B = area of base </p>
-        <p> l = slant height</p>
-        <form id="b1val">b  (base side) value: <input id="bval"> </form>
-        <form id="h1val">h value: <input id="hval"> </form>
-        <form id="l1val">l value: <input id="lval"> </form>
-        <br>
-        <button onclick="pyramidCalc()">Calculate</button>
-        <p id="pyravol"></p>
-        <p id="pyraSA"></p>
-
+            <script>
+                randPyramid();
+            </script>
+            <form id="pyraAnswer">Volume: <input id="pAnswer1"> </form>
+            <form id="pyraAnswer2">Surface Area: <input id="pAnswer2"> </form>
+            <button onclick="pyramidAnswer()">Calculate</button>
+            <p id="pyraCheck1"></p>
+            <p id="pyraCheck2"></p>
+            <button onclick="randPyramid()">Generate Another</button>
+        </div>
     </div>
 
 </div>

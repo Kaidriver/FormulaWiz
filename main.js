@@ -105,6 +105,7 @@ function triangleCalc() {
 }
 var answer1;
 var answer2;
+
 function randTrap () {
 
     var a = Math.floor((Math.random() * 20) + 1);
@@ -234,5 +235,85 @@ function cylinderAnswer () {
         document.getElementById("cyCheck2").innerHTML = "Surface Area: Incorrect!";
     }
 }
+function randDistance() {
+    var x1 = Math.floor((Math.random() * 20) + 1);
+    var x2 = Math.floor((Math.random() * 20) + 1);
+    var y1 = Math.floor((Math.random() * 20) + 1);
+    var y2 = Math.floor((Math.random() * 20) + 1);
+    document.getElementById("disvalx").innerHTML = "X1 value: " + x1;
+    document.getElementById("disvalx2").innerHTML = "X2 value: " + x2;
+    document.getElementById("disvaly").innerHTML = "Y1 value: " + y1;
+    document.getElementById("disvaly2").innerHTML = "Y2 value: " + y2;
 
+    answer1 = Math.sqrt(Math.pow(x2-x1, 2)+Math.pow(y2-y1, 2)).toFixed(2);
+
+}
+
+function distanceAnswer () {
+    var user = parseFloat(document.getElementById("dAnswer1").value);
+
+    if (answer1 == user) {
+        document.getElementById("disCheck1").innerHTML = "Distance: Correct!";
+
+    } else {
+        document.getElementById("disCheck1").innerHTML = "Distance: Incorrect!";
+    }
+
+}
+function randCircle() {
+    var r = Math.floor((Math.random() * 20) + 1);
+
+    document.getElementById("circler").innerHTML = "r value: " + r;
+
+    answer1 = (Math.PI*r*r).toFixed(2);
+    answer2 = (2*r*Math.PI).toFixed(2);
+}
+
+function circleAnswer () {
+    var user = parseFloat(document.getElementById("cAnswer1").value);
+    var user2 = parseFloat(document.getElementById("cAnswer2").value);
+    if (answer1 == user) {
+        document.getElementById("circCheck1").innerHTML = "Area: Correct!";
+
+    } else {
+        document.getElementById("circCheck1").innerHTML = "Area: Incorrect!";
+    }
+    if (answer2 == user2) {
+        document.getElementById("circCheck2").innerHTML = "Circumference: Correct!";
+
+    } else {
+        document.getElementById("circCheck2").innerHTML = "Circumference: Incorrect!";
+    }
+
+
+}
+function randPyramid() {
+    var b = Math.floor((Math.random() * 20) + 1);
+    var h = Math.floor((Math.random() * 20) + 1);
+    var l = Math.floor((Math.random() * 20) + 1);
+    document.getElementById("pyrab").innerHTML = "r value: " + b;
+    document.getElementById("pyrah").innerHTML = "r value: " + h;
+    document.getElementById("pyral").innerHTML = "r value: " + l;
+    answer1 = ((b*b*h)/3).toFixed(2);
+    answer2 = ((b*b) + (2 * b) * Math.sqrt(b*b/4 + (h*h))).toFixed(2);
+}
+
+function pyramidAnswer () {
+    var user = parseFloat(document.getElementById("pAnswer1").value);
+    var user2 = parseFloat(document.getElementById("pAnswer2").value);
+    if (answer1 == user) {
+        document.getElementById("pyraCheck1").innerHTML = "Volume: Correct!";
+
+    } else {
+        document.getElementById("pyraCheck1").innerHTML = "Volume: Incorrect!";
+    }
+    if (answer2 == user2) {
+        document.getElementById("pyraCheck2").innerHTML = "Surface Area: Correct!";
+
+    } else {
+        document.getElementById("pyraCheck2").innerHTML = "Surface Area: Incorrect!";
+    }
+
+
+}
 

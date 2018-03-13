@@ -54,20 +54,36 @@
 <div class="container">
     <div class="content">
 
-        <h2>Distance</h2>
+        <h2>Distance Formula</h2>
+        <div class="tBox">
+            <img src="distance.jpg" width="250px">
+            <form id="disxval">x1 value: <input id="xval1"> </form>
 
-        <img src="distance.jpg" width="250px">
-        <form id="disxval">x1 value: <input id="xval1"> </form>
+            <form id="disx1val">x2 value: <input id="xval2"> </form>
+            <form id="disyval">y1 value: <input id="yval1"> </form>
 
-        <form id="disx1val">x2 value: <input id="xval2"> </form>
-        <form id="disyval">y1 value: <input id="yval1"> </form>
+            <form id="disy1val">y2 value: <input id="yval2"> </form>
 
-        <form id="disy1val">y2 value: <input id="yval2"> </form>
+            <br>
+            <button onclick="distanceCalc()">Calculate</button>
+            <p id="dis-sum"></p>
+        </div>
+        <div class="tBox">
+            <h3>Practice</h3>
+            <h3>(Please round to the nearest hundredth)</h3>
+            <p id="disvalx"></p>
+            <p id="disvalx2"></p>
+            <p id="disvaly"></p>
+            <p id="disvaly2"></p>
+            <script>
+                randDistance();
+            </script>
+            <form id="parAnswer">Distance: <input id="dAnswer1"> </form>
+            <button onclick="distanceAnswer()">Calculate</button>
+            <p id="disCheck1"></p>
 
-        <br>
-        <button onclick="distanceCalc()">Calculate</button>
-        <p id="dis-sum"></p>
-
+            <button onclick="randDistance()">Generate Another</button>
+        </div>
 
     </div>
 

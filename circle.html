@@ -55,14 +55,28 @@
     <div class="content">
 
         <h2>Circle Formulas</h2>
-
-        <img src="circle.jpg" width="250px">
-        <form id="r1val">r value: <input id="rval"> </form>
-        <br>
-        <button onclick="circleCalc()">Calculate</button>
-        <p id="circlear"></p>
-        <p id="circlecirc"></p>
-
+        <div class="tBox">
+            <img src="circle.jpg" width="250px">
+            <form id="r1val">r value: <input id="rval"> </form>
+            <br>
+            <button onclick="circleCalc()">Calculate</button>
+            <p id="circlear"></p>
+            <p id="circlecirc"></p>
+        </div>
+        <div class="tBox">
+            <h3>Practice</h3>
+            <h3>(Please round to the nearest hundredth)</h3>
+            <p id="circler"></p>
+            <script>
+                randCircle();
+            </script>
+            <form id="cirAnswer">Area: <input id="cAnswer1"> </form>
+            <form id="cirAnswer2">Circumference: <input id="cAnswer2"> </form>
+            <button onclick="circleAnswer()">Calculate</button>
+            <p id="circCheck1"></p>
+            <p id="circCheck2"></p>
+            <button onclick="randCircle()">Generate Another</button>
+        </div>
     </div>
 
 </div>
