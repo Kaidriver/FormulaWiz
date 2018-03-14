@@ -316,4 +316,67 @@ function pyramidAnswer () {
 
 
 }
+function randMidpoint() {
+    var x1 = Math.floor((Math.random() * 20) + 1);
+    var x2 = Math.floor((Math.random() * 20) + 1);
+    var y1 = Math.floor((Math.random() * 20) + 1);
+    var y2 = Math.floor((Math.random() * 20) + 1);
+    document.getElementById("midvalx").innerHTML = "X1 value: " + x1;
+    document.getElementById("midvalx2").innerHTML = "X2 value: " + x2;
+    document.getElementById("midvaly").innerHTML = "Y1 value: " + y1;
+    document.getElementById("midvaly2").innerHTML = "Y2 value: " + y2;
 
+    answer1 = ((x1 + x2)/2).toFixed(2);
+    answer2 =  ((y1 + y2)/2).toFixed(2);
+
+}
+
+
+function midpointAnswer () {
+    var user = parseFloat(document.getElementById("mAnswer1").value);
+    var user2 = parseFloat(document.getElementById("mAnswer2").value);
+    if (answer1 == user) {
+        document.getElementById("midCheck1").innerHTML = "x val: Correct!";
+
+    } else {
+        document.getElementById("midCheck1").innerHTML = "x val: Incorrect!";
+    }
+    if (answer2 == user2) {
+        document.getElementById("midCheck2").innerHTML = "y val: Correct!";
+
+    } else {
+        document.getElementById("midCheck2").innerHTML = "y val: Incorrect!";
+    }
+}
+function randRectPrism() {
+    var l = Math.floor((Math.random() * 20) + 1);
+    var w = Math.floor((Math.random() * 20) + 1);
+    var h = Math.floor((Math.random() * 20) + 1);
+
+    document.getElementById("rectvall").innerHTML = "l value: " + l;
+    document.getElementById("rectvalw").innerHTML = "w value: " + w;
+    document.getElementById("rectvalh").innerHTML = "h value: " + h;
+
+
+    answer1 = (l*w*h).toFixed(2);
+    answer2 =  (2*(l*w+ l*h +w*h)).toFixed(2);
+
+}
+
+
+function rectPrsimAnswer () {
+    var user = parseFloat(document.getElementById("rAnswer1").value);
+    var user2 = parseFloat(document.getElementById("rAnswer2").value);
+    if (answer1 == user) {
+        document.getElementById("rectCheck1").innerHTML = "Area: Correct!";
+
+    } else {
+        document.getElementById("rectCheck1").innerHTML = "Area: Incorrect!";
+    }
+    if (answer2 == user2) {
+        document.getElementById("rectCheck2").innerHTML = "Surface Area: Correct!";
+
+    } else {
+        document.getElementById("rectCheck2").innerHTML = "Surface Area: Incorrect!";
+    }
+}

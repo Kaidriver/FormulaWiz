@@ -54,21 +54,37 @@
 <div class="container">
     <div class="content">
 
-        <h2>Midpoint</h2>
+          <h2>Midpoint</h2>
+       <div class="tBox">
+          <img src="midpoint.png" width="250px">
+          <form id="disxval">x1 value: <input id="xval1"> </form>
 
-        <img src="midpoint.png" width="250px">
-        <form id="disxval">x1 value: <input id="xval1"> </form>
+          <form id="disx1val">x2 value: <input id="xval2"> </form>
+          <form id="disyval">y1 value: <input id="yval1"> </form>
 
-        <form id="disx1val">x2 value: <input id="xval2"> </form>
-        <form id="disyval">y1 value: <input id="yval1"> </form>
+          <form id="disy1val">y2 value: <input id="yval2"> </form>
 
-        <form id="disy1val">y2 value: <input id="yval2"> </form>
-
-        <br>
-        <button onclick="midPointCalc()">Calculate</button>
-        <p id="mid-sum"></p>
-
-
+          <br>
+          <button onclick="midPointCalc()">Calculate</button>
+          <p id="mid-sum"></p>
+        </div>
+        <div class="tBox2">
+          <h3>Practice</h3>
+          <h3>(Please round to the nearest hundredth)</h3>
+          <p id="midvalx"></p>
+          <p id="midvalx2"></p>
+          <p id="midvaly"></p>
+          <p id="midvaly2"></p>
+          <script>
+              randMidpoint();
+          </script>
+          <form id="midAnswer">x val: <input id="mAnswer1"> </form>
+          <form id="midAnswer2">y val: <input id="mAnswer2"> </form>
+          <button onclick="midpointAnswer()">Calculate</button>
+          <p id="midCheck1"></p>
+          <p id="midCheck2"></p>
+          <button onclick="randMidpoint()">Generate Another</button>
+        </div>
 
 
 

@@ -55,17 +55,34 @@
     <div class="content">
 
         <h2>Rectangular Prism Formulas</h2>
+        <div class = "tBox">
+          <img src="rectangular.jpg" width="350px">
+          <form id="l1val">Length value: <input id="lval"> </form>
+          <form id="w2val">Width value: <input id="wval"> </form>
+          <form id="h3val">Height value: <input id="hval"> </form>
+          <br>
+          <button onclick="rectPrismCalc()">Calculate</button>
+          <p id="rectvol"></p>
+          <p id="rectSA"></p>
+        </div>
+        <div class = "tBox2">
+          <h3>Practice</h3>
+          <h3>(Please round to the nearest hundredth)</h3>
+          <p id="rectvall"></p>
+          <p id="rectvalh"></p>
+          <p id="rectvalw"></p>
 
-        <img src="rectangular.jpg" width="350px">
-        <form id="l1val">Length value: <input id="lval"> </form>
-        <form id="w2val">Width value: <input id="wval"> </form>
-        <form id="h3val">Height value: <input id="hval"> </form>
-        <br>
-        <button onclick="rectPrismCalc()">Calculate</button>
-        <p id="rectvol"></p>
-        <p id="rectSA"></p>
+          <script>
+              randRectPrism();
+          </script>
+          <form id="rectAnswer">Area: <input id="rAnswer1"> </form>
+          <form id="rectAnswer2">Surface Area: <input id="rAnswer2"> </form>
+          <button onclick="rectPrsimAnswer()">Calculate</button>
 
-    </div>
+          <p id="rectCheck1"></p>
+          <p id="rectCheck2"></p>
+          <button onclick="randRectPrism()">Generate Another</button>
+        </div>
 
 </div>
 

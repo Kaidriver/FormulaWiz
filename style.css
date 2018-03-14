@@ -1,14 +1,14 @@
 .container {
     max-width: 960px;
-	width: 96%;
-	margin: auto;
+	  width: 96%;
+	  margin: auto;
 
 }
 body {
     font-family: "Helvetica";
-	margin: 0;
-	padding: 0;
-	color: darkgrey;
+  	margin: 0;
+  	padding: 0;
+  	color: darkgrey;
     background-color: #f3f3f3;
 
 }
@@ -30,9 +30,9 @@ header {
 }
 nav li{
     display: inline-block;
-	padding: 10px 20px;
-	background:white;
-	line-height: normal;
+	  padding: 10px 20px;
+	  background:white;
+	  line-height: normal;
 }
 
 /*---Content---*/
