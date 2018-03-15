@@ -5,6 +5,7 @@
     <title>FormulaWiz</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://www.desmos.com/api/v1.0/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+
 </head>
 <body>
     <header>
@@ -12,7 +13,7 @@
             <div class="main-title">
                 <a href="index.html"><h1>FormulaWiz</h1></a>
             </div>
-            <nav> 
+            <nav>
                 <div class="dropDown">
                     <li><button class="dropBtn">Algebra 2</button></li>
                     <div class="dropDown-content">
@@ -48,10 +49,10 @@
 
                     </div>
                 </div>
-            </nav> 
+            </nav>
         </div>
         </header>
-        <div class="container"> 
+        <div class="container">
             <div class="content1">
                 <h2>Formulas for Algebra 1, 2 and Geometry!</h2>
                     <ul class="list">
@@ -81,9 +82,14 @@
                         <li><a href="GeometrySpecialRightTriangles.html">Geometry Special Right Triangles</a></li>
                     </ul>
 
-
+                   <div id="calculator" style="width: 600px; height: 400px;"></div>
+                   <script>
+                    var elt = document.getElementById('calculator');
+                    var calculator = Desmos.GraphingCalculator(elt);
+                    calculator.setExpression({id:'graph1', latex:'y=acosb(x+c)+d'});
+                  </script>
             </div>
         </div>
-    
+
 </body>
 </html>

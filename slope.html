@@ -55,7 +55,7 @@
     <div class="content">
 
         <h2>Slope Formula</h2>
-
+      <div class = "tBox">
         <img src="slope.jpg" width="250px">
         <form id="slopex1val">x1 value: <input id="xval1"> </form>
 
@@ -66,7 +66,23 @@
         <br>
         <button onclick="slopeCalc()">Calculate</button>
         <p id="slope-sum"></p>
+      </div>
+      <div class = "tBox2">
+        <h3>Practice</h3>
+        <h3>(Please round to the nearest hundredth)</h3>
+        <p id="slopevalx"></p>
+        <p id="slopevalx2"></p>
+        <p id="slopevaly"></p>
+        <p id="slopevaly2"></p>
+        <script>
+            randSlope();
+        </script>
+        <form id="slopeAnswer">Distance: <input id="sAnswer1"> </form>
+        <button onclick="slopeAnswer()">Calculate</button>
+        <p id="slopeCheck1"></p>
 
+        <button onclick="randSlope()">Generate Another</button>
+      </div>
 
 
 

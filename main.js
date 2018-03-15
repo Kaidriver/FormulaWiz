@@ -380,3 +380,30 @@ function rectPrsimAnswer () {
         document.getElementById("rectCheck2").innerHTML = "Surface Area: Incorrect!";
     }
 }
+function randSlope() {
+    var x1 = Math.floor((Math.random() * 20) + 1);
+    var x2 = Math.floor((Math.random() * 20) + 1);
+    var y1 = Math.floor((Math.random() * 20) + 1);
+    var y2 = Math.floor((Math.random() * 20) + 1);
+    document.getElementById("slopevalx").innerHTML = "X1 value: " + x1;
+    document.getElementById("slopevalx2").innerHTML = "X2 value: " + x2;
+    document.getElementById("slopevaly").innerHTML = "Y1 value: " + y1;
+    document.getElementById("slopevaly2").innerHTML = "Y2 value: " + y2;
+
+    answer1 =  ((x2-x1)/(y2-y1)).toFixed(2);
+
+
+}
+
+
+function slopeAnswer () {
+    var user = parseFloat(document.getElementById("sAnswer1").value);
+
+    if (answer1 == user) {
+        document.getElementById("slopeCheck1").innerHTML = "Slope: Correct!";
+
+    } else {
+        document.getElementById("slopeCheck1").innerHTML = "Slope: Incorrect!";
+    }
+
+}
