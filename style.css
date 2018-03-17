@@ -10,7 +10,7 @@ body {
   	padding: 0;
   	color: darkgrey;
     background-color: #f3f3f3;
-
+    background-image: url("background.jpg")
 }
 a {
 
@@ -160,7 +160,7 @@ input {
 button {
   border: none;
   text-decoration: none;
- 
+
   border-radius:12px;
   padding: 12px 30px;
 }
