@@ -5,7 +5,7 @@
     <title>FormulaWiz</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://www.desmos.com/api/v1.0/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
-
+    <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
     <header>
@@ -53,42 +53,31 @@
         </div>
         </header>
         <div class="container">
-            <div class="content1">
-                <h2>Formulas for Algebra 1, 2 and Geometry!</h2>
-                    <ul class="list">
-                        <li><a href="quad.html">Quadratic Formula</a></li>
-                        <li><a href="distance.html">Distance Formula</a></li>
-                        <li><a href="midpoint.html">Midpoint Formula</a></li>
-                        <li><a href="slope.html">Slope Formula</a></li>
-                        <li><a href="rectangle.html">Rectangle Formulas</a></li>
-                        <li><a href="triangle.html">Triangle Formulas</a></li>
 
-                    </ul>
-                    <ul class="list">
-                        <li><a href="trap.html">Trapezoid Formulas</a></li>
-                        <li><a href="par.html">Parallelogram Formulas</a></li>
-                        <li><a href="circle.html">Circle Formulas</a></li>
-                        <li><a href="rectprism.html">Rectangular Prism Formulas</a></li>
-                        <li><a href="cone.html">Cone Formulas</a></li>
-                        <li><a href="sphere.html">Sphere Formulas</a></li>
-                        <li><a href="pytha.html">Pythagorean Theorem</a></li>
-                    </ul>
-                    <ul class="list">
-                        <li><a href="cylinder.html">Cylinder Formulas</a></li>
-                        <li><a href="Pyramid.html">Square Pyramid Formulas</a></li>
-                        <li><a href="alg1graphs.html">Algebra 1 Parent Functions</a></li>
-                        <li><a href="alg2graphs.html">Algebra 2 Parent Functions</a></li>
-                        <li><a href="Geometryconics.html">Geometry Conic Sections</a></li>
-                        <li><a href="GeometrySpecialRightTriangles.html">Geometry Special Right Triangles</a></li>
-                    </ul>
+                <div class="search-bar">
+                  <input type="text" name="search" value="" autocomplete="off" id="myinput" onkeyup="searchFunction()" placeholder="Search">
+                </div>
+                <ul id="wrapper">
+                  <div class="search-content">
+                    <li>
+                      <a href="#">Quadratic Formula</a>
+                    </li>
+                    <li>
+                      <a href="#">Trapezoid</a>
+                    </li>
+                    <li>
+                      <a href="#">Square</a>
+                    </li>
+                    <li>
+                      <a href="#">Rectangle</a>
+                    </li>
+                    <li>
+                      <a href="#">Parallelogram</a>
+                    </li>
+                  </div>
+                </ul>
 
-                   <div id="calculator" style="width: 600px; height: 400px;"></div>
-                   <script>
-                    var elt = document.getElementById('calculator');
-                    var calculator = Desmos.GraphingCalculator(elt);
-                    calculator.setExpression({id:'graph1', latex:'y=acosb(x+c)+d'});
-                  </script>
-            </div>
+
         </div>
 
 </body>
