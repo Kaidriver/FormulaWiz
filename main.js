@@ -114,8 +114,8 @@ function slopeCalc() {
 }
 function sphereCalc() {
     var r = parseFloat(document.getElementById("rval").value);
-    document.getElementById("spherevol").innerHTML = "Volume: " +(4*Math.PI*r*r*r)/3
-    document.getElementById("sphereSA").innerHTML = "Surface Area: " + 4*Math.PI*r*r; ;
+    document.getElementById("spherevol").innerHTML = "Volume: " + (4*Math.PI*r*r*r)/3
+    document.getElementById("sphereSA").innerHTML = "Surface Area: " + 4*Math.PI*r*r;
 }
 function trapCalc() {
     var a = parseFloat(document.getElementById("taval").value);
@@ -400,10 +400,10 @@ function rectPrsimAnswer () {
     var user = parseFloat(document.getElementById("rAnswer1").value);
     var user2 = parseFloat(document.getElementById("rAnswer2").value);
     if (answer1 == user) {
-        document.getElementById("rectCheck1").innerHTML = "Area: Correct!";
+        document.getElementById("rectCheck1").innerHTML = "Volume: Correct!";
 
     } else {
-        document.getElementById("rectCheck1").innerHTML = "Area: Incorrect!";
+        document.getElementById("rectCheck1").innerHTML = "Volume: Incorrect!";
     }
     if (answer2 == user2) {
         document.getElementById("rectCheck2").innerHTML = "Surface Area: Correct!";
@@ -438,4 +438,60 @@ function slopeAnswer () {
         document.getElementById("slopeCheck1").innerHTML = "Slope: Incorrect!";
     }
 
+}
+
+function randCone() {
+    var r = Math.floor((Math.random() * 20) + 1);
+    var h = Math.floor((Math.random() * 20) + 1);
+
+    document.getElementById("conevarA").innerHTML = "Radius: " + r;
+    document.getElementById("conevarB").innerHTML = "Height: " + h;
+
+
+    answer1 = ((Math.PI*r*r*h)/3) .toFixed(2);
+    answer2 =  ((Math.PI*r*(Math.sqrt((r*r) + (h*h)) + r))) .toFixed(2);
+
+}
+
+function coneAnswer () {
+    var user = parseFloat(document.getElementById("cAnswer1").value);
+    var user2 = parseFloat(document.getElementById("cAnswer2").value);
+    if (answer1 == user) {
+        document.getElementById("coneCheck1").innerHTML = "Volume: Correct!";
+
+    } else {
+        document.getElementById("coneCheck1").innerHTML = "Volume: Incorrect!";
+    }
+    if (answer2 == user2) {
+        document.getElementById("coneCheck2").innerHTML = "Surface Area: Correct!";
+
+    } else {
+        document.getElementById("coneCheck2").innerHTML = "Surface Area: Incorrect!";
+    }
+}
+
+function randSphere () {
+  var r = Math.floor((Math.random() * 20) + 1);
+
+  document.getElementById("spherevarR").innerHTML = "Radius: " + r;
+
+  answer1 = ((4*Math.PI*r*r*r)/3) .toFixed(2);
+  answer2 = (4*Math.PI*r*r) .toFixed(2);
+}
+
+function sphereAnswer () {
+    var user = parseFloat(document.getElementById("sAnswer1").value);
+    var user2 = parseFloat(document.getElementById("sAnswer2").value);
+    if (answer1 == user) {
+        document.getElementById("sphereCheck1").innerHTML = "Volume: Correct!";
+
+    } else {
+        document.getElementById("sphereCheck1").innerHTML = "Volume: Incorrect!";
+    }
+    if (answer2 == user2) {
+        document.getElementById("sphereCheck2").innerHTML = "Surface Area: Correct!";
+
+    } else {
+        document.getElementById("sphereCheck2").innerHTML = "Surface Area: Incorrect!";
+    }
 }

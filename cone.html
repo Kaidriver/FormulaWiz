@@ -56,6 +56,7 @@
 
         <h2>Cone Formulas</h2>
 
+        <div class = "tBox">
         <img src="cone.gif" width="250px">
         <form id="r2val">r value: <input id="rval"> </form>
         <form id="h2val">h value: <input id="hval"> </form>
@@ -64,9 +65,34 @@
         <p id="conevol"></p>
         <p id="coneSA"></p>
         <p id="coneLSA"></p>
-    </div>
+
+
+
+
 
 </div>
+<div class = "tBox2">
+    <h3>Practice</h3>
+    <h3>(Please round to the nearest hundredth)</h3>
+    <p id="conevarA"></p>
+    <p id="conevarB"></p>
+
+    <script>
+        randCone();
+    </script>
+    <form id="coneAnswer1">Volume: <input id="cAnswer1"> </form>
+    <form id="coneAnswer2">Surface Area: <input id="cAnswer2"> </form>
+    <button onclick="coneAnswer()">Calculate</button>
+    <p id="coneCheck1"></p>
+    <p id="coneCheck2"></p>
+    <button onclick="randCone()">Generate Another</button>
+</div>
+
+</div>
+
+</div>
+
+
 
 </body>
 </html>
