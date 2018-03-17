@@ -53,8 +53,9 @@
 </header>
 <div class="container">
     <div class="content">
+        <div class = "tBox">
 
-        <h2>Cone Formulas</h2>
+        <h2>Sphere Formulas</h2>
 
         <img src="sphere.jpg" width="250px">
         <form id="r1val">r value: <input id="rval"> </form>
@@ -65,7 +66,26 @@
 
     </div>
 
-</div>
+    <div class = "tBox2">
+        <h3>Practice</h3>
+        <h3>(Please round to the nearest hundredth)</h3>
+        <p id="spherevarR"></p>
 
+
+        <script>
+            randSphere();
+        </script>
+
+        <form id="sphereAnswer">Volume: <input id="sAnswer1"> </form>
+        <form id="sphereAnswer2">Surface Area: <input id="sAnswer2"> </form>
+        <button onclick="sphereAnswer()">Calculate</button>
+        <p id="sphereCheck1"></p>
+        <p id="sphereCheck2"></p>
+        <button onclick="randSphere()">Generate Another</button>
+
+    </div>
+
+</div>
+</div>
 </body>
 </html>
