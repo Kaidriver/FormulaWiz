@@ -55,8 +55,10 @@
         <div class="container">
 
                 <div class="search-bar">
-                  <input type="text" name="search" value="" autocomplete="off" id="myinput" onkeyup="searchFunction()" placeholder="Search">
+                  <input type="text" name="search" value="" autocomplete="off" id="myinput" onkeydown="enter()" placeholder="Search">
+                  <input type = "button" id = "functionSearch" value = "Search" onclick = "searchFunction()"/>
                 </div>
+
                 <ul id="wrapper">
                   <div class="search-content">
                     <li>
