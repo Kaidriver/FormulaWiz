@@ -151,11 +151,10 @@ nav li{
 .search-bar {
 
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 90px;
   margin-left: 50%;
   transform: translateX(-50%);
-  width: 95%;
-  max-width: 344px;
+  width: 500px;
   height: 48px;
   background: #fff;
   border-radius: 7px;
@@ -196,6 +195,7 @@ ul#wrapper {
   display: inline-block;
   margin-top: 100px;
 }
+
 .search-content li {
   width: 200px;
   height: 100px;
@@ -216,4 +216,21 @@ ul#wrapper {
 }
 #functionSearch{
   display: none;
+}
+#main-title {
+  color: darkgrey;
+  font-size: 50px;
+  margin-left: 450px;
+}
+.style {
+  width: auto;
+  height: 400px;
+  background-color: white;
+  padding: 10px;
+}
+.blue {
+  width: auto;
+  height: 400px;
+  background-color: #0080ff;
+ 
 }
