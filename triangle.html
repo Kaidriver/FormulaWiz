@@ -55,7 +55,7 @@
     <div class="content">
 
         <h2>Triangle Formulas</h2>
-
+        <div class = "tBox">
         <img src="triangle.gif" width="250px">
         <p>Area: </p>
         <form id="tbval">b value: <input id="bval"> </form>
@@ -64,17 +64,26 @@
 
         <button onclick="triangleCalc()">Calculate</button>
         <p id="tri-area"></p>
-        <br>
-        <p>Perimeter: </p>
-        <form id="raval">b value: <input id="aval"> </form>
-        <form id="rbval">h value: <input id="dval"> </form>
-        <form id="rcval">h value: <input id="cval"> </form>
-        <br>
-        <button onclick="triangleCalc()">Calculate</button>
-        <p id="tri-per"></p>
+      </div>
 
+      <div class = "tBox2">
+          <h3>Practice</h3>
+          <h3>(Please round to the nearest hundredth)</h3>
+          <p id="trivarA"></p>
+          <p id="trivarB"></p>
+          <p id="trivarC"></p>
+          <p id="trivarH"></p>
 
-
+          <script>
+              randTriangle();
+          </script>
+          <form id="triAnswer1">Area: <input id="tAnswer1"> </form>
+          <form id="triAnswer2">Perimeter: <input id="tAnswer2"> </form>
+          <button onclick="triangleAnswer()">Calculate</button>
+          <p id="triCheck1"></p>
+          <p id="triCheck2"></p>
+          <button onclick="randTriangle()">Generate Another</button>
+      </div>
 
 
     </div>

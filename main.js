@@ -509,3 +509,36 @@ function sphereAnswer () {
         document.getElementById("sphereCheck2").innerHTML = "Surface Area: Incorrect!";
     }
 }
+
+function randTriangle() {
+    var a = Math.floor((Math.random() * 20) + 1);
+    var b = Math.floor((Math.random() * 20) + 1);
+    var c = Math.floor((Math.random() * 20) + 1);
+    var h = Math.floor((Math.random() * 20) + 1);
+
+    document.getElementById("trivarA").innerHTML = "a value: " + a;
+    document.getElementById("trivarB").innerHTML = "b value: " + b;
+    document.getElementById("trivarC").innerHTML = "c value: " + c;
+    document.getElementById("trivarH").innerHTML = "h value: " + h;
+
+
+    answer1 = ((b*h)/2) .toFixed(2);
+    answer2 =  (a+b+c) .toFixed(2);
+
+}
+function triangleAnswer () {
+    var user = parseFloat(document.getElementById("tAnswer1").value);
+    var user2 = parseFloat(document.getElementById("tAnswer2").value);
+    if (answer1 == user) {
+        document.getElementById("triCheck1").innerHTML = "Area: Correct!";
+
+    } else {
+        document.getElementById("triCheck1").innerHTML = "Area: Incorrect!";
+    }
+    if (answer2 == user2) {
+        document.getElementById("triCheck2").innerHTML = "Perimeter: Correct!";
+
+    } else {
+        document.getElementById("triCheck2").innerHTML = "Perimeter: Incorrect!";
+    }
+}
