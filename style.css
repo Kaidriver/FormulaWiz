@@ -151,7 +151,7 @@ nav li{
 .search-bar {
 
   display: inline-block;
-  margin-top: 90px;
+  margin-top: 60px;
   margin-left: 50%;
   transform: translateX(-50%);
   width: 500px;
@@ -193,11 +193,12 @@ button {
 ul#wrapper {
   list-style: none;
   display: inline-block;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .search-content li {
-  width: 200px;
+  width: 250px;
   height: 100px;
   background: white;
   float: left;
@@ -208,7 +209,7 @@ ul#wrapper {
   visibility:  hidden;
 }
 .search-content a {
-  font-size: 24px;
+  font-size: 16px;
   color: black;
   line-height: 100px;
   text-decoration: none;
@@ -219,8 +220,8 @@ ul#wrapper {
 }
 #main-title {
   color: darkgrey;
-  font-size: 50px;
-  margin-left: 450px;
+  font-size: 65px;
+  margin-left: 405px;
 }
 .style {
   width: auto;
@@ -230,7 +231,10 @@ ul#wrapper {
 }
 .blue {
   width: auto;
-  height: 400px;
+  height: auto;
   background-color: #0080ff;
- 
+}
+#main-title2 {
+  float: right;
+  margin-right: 475px;
 }
