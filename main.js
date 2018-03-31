@@ -542,3 +542,28 @@ function triangleAnswer () {
         document.getElementById("triCheck2").innerHTML = "Perimeter: Incorrect!";
     }
 }
+
+function randPytha () {
+  var a = Math.floor((Math.random() * 20) + 1);
+  var b = Math.floor((Math.random() * 20) + 1);
+
+  document.getElementById("pythavarA").innerHTML = "a value: " + a;
+  document.getElementById("pythavarB").innerHTML = "b value: " + b;
+
+
+  answer1 = (Math.sqrt((a*a) + (b*b))) .toFixed(2);
+
+}
+
+function pythaAnswer () {
+  var user = parseFloat(document.getElementById("pAnswer1").value);
+
+  if (answer1 == user) {
+      document.getElementById("pythaCheck1").innerHTML = "C value: Correct!";
+
+  } else {
+      document.getElementById("pythaCheck1").innerHTML = "C value: Incorrect!";
+  }
+
+
+}

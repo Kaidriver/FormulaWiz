@@ -56,6 +56,8 @@
 
         <h2>Pythagorean Theorem</h2>
 
+        <div class = "tBox">
+
         <img src="triangle.gif" width="250px">
         <p>Note: Enter 0 for value you want to solve for! (Only pay attention to value you are solving for regarding to outputs) </p>
         <form id="pabval">a value: <input id="paval"> </form>
@@ -70,7 +72,26 @@
 
 
 
+      </div>
 
+      <div class = "tBox2">
+          <h3>Practice</h3>
+          <h3>(Please round to the nearest hundredth)</h3>
+          <h3>Solve for C</h3>
+
+          <p id="pythavarA"></p>
+          <p id="pythavarB"></p>
+
+          <script>
+              randPytha();
+          </script>
+
+          <form id="pythaAnswer1">C value: <input id="pAnswer1"> </form>
+          <button onclick="pythaAnswer()">Calculate</button>
+          <p id="pythaCheck1"></p>
+
+          <button onclick="randPytha()">Generate Another</button>
+      </div>
 
     </div>
 
